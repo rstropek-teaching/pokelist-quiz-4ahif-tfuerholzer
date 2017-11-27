@@ -15,7 +15,7 @@
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 </head>
 
-<body onload="loadPokemons(10);">
+<body onload="POKEMON_INIT();">
     <center>
         <h3 class="center" onclick="flip();" id="top">Pokemon - List : </h3>
         <div class="pokemon-list-container front" id="pokemon-container">
@@ -23,12 +23,12 @@
         </div>
         <div class="row pokemon-list-controlls">
             <div class="col-lg-3">
-                <button class="next-prev-button" onclick="loadPrev();">Show previous Pokemons</button>
+                <button class="next-prev-button" id="loadprev">Show previous Pokemons</button>
             </div>
             <div class="col-lg-6">
                 <input type="number" value=10 class="inline" id="number_input">
             </div>
-            <div class="col-lg-3"><button class="next-prev-button" onclick="loadNext();">Show next Pokemons</button></div>
+            <div class="col-lg-3"><button class="next-prev-button" id="loadnext">Show next Pokemons</button></div>
         </div>
     </center>
 </body>
